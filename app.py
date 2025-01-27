@@ -95,6 +95,7 @@ def main():
                 #         st.write(doc.page_content)
                 #         st.markdown("---")
 
+                st.markdown("---")
                 if selected_file_name in st.session_state.chathistory:
                     st.markdown("### ChatHistory")
                     for i, msg in enumerate(st.session_state.chathistory[selected_file_name]):
