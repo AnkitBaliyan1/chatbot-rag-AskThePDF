@@ -28,23 +28,30 @@ This Chatbot Application enables users to upload PDF Document and get respose fo
 
 Run below command in your terminal
 
-```python 
-# clone the github branch
-git clone https://github.com/AnkitBaliyan1/chatbot-rag-AskThePDF.git
+- Clone repository
+
+    ```python 
+    # clone the github branch
+    git clone https://github.com/AnkitBaliyan1/chatbot-rag-AskThePDF.git
 
 
-# checkout to the master branch 
-git checkout master
+    # checkout to the master branch 
+    git checkout master
 
-# pull the latest code from master branch
-git pull 
-```
+    # pull the latest code from master branch
+    git pull 
+    ```
 
 - set up environment variables
     ``` python
     PINECONE_API_KEY = "pinecone_api_key_here"
     PINECONE_INDEX_NAME = "pinecone_vector_index_here"
     PINECONE_NAMESPACE = "pinecone_namespace_here"
+    ```
+
+- Install dependencies
+    ``` python
+    pip install -r requirements.txt
     ```
 
 - run command to start the UI
