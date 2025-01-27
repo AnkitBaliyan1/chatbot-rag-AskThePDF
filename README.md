@@ -23,4 +23,34 @@ This Chatbot Application enables users to upload PDF Document and get respose fo
 - Click ```'Push for bot to learn'``` on the side bar (wait while the document are processed and vector database is ready)
 - Once ready, user can select from the  ```Select document``` and ```Select model``` options. User can now insert question and click ```'Get Answer'```
 
+
+### Steps to Run Locally:
+
+Run below command in your terminal
+
+```python 
+# clone the github branch
+git clone https://github.com/AnkitBaliyan1/chatbot-rag-AskThePDF.git
+
+
+# checkout to the master branch 
+git checkout master
+
+# pull the latest code from master branch
+git pull 
+```
+
+- set up environment variables
+    ``` python
+    PINECONE_API_KEY = "pinecone_api_key_here"
+    PINECONE_INDEX_NAME = "pinecone_vector_index_here"
+    PINECONE_NAMESPACE = "pinecone_namespace_here"
+    ```
+
+- run command to start the UI
+    ``` python
+    streamlit run app.py
+    ```
+
+
 ---

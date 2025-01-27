@@ -19,7 +19,7 @@ def main():
 
     st.sidebar.title("😎🗝️")
 
-    st.session_state["OPENAI_API_KEY"]=st.sidebar.text_input("Enter your API key?", type="password")
+    st.session_state["OPENAI_API_KEY"]=st.sidebar.text_input("Enter your OPENAI API key", type="password")
     os.environ["OPENAI_API_KEY"] = st.session_state["OPENAI_API_KEY"]
     
 
@@ -97,6 +97,7 @@ def main():
 
                 if selected_file_name in st.session_state.chathistory:
                     for i, msg in enumerate(st.session_state.chathistory[selected_file_name]):
+                        st.markdown("### ChatHistory")
                         for question, response in msg.items():
                             st.chat_message("user").write(question)
                             st.chat_message("Assistant").write(response)
