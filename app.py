@@ -89,11 +89,11 @@ def main():
                 else:
                     st.session_state.chathistory[selected_file_name].append({query:response})
 
-                with st.expander(label="See relevant documents", expanded=False):
-                    # st.write(relevant_docs)
-                    for doc in relevant_docs:
-                        st.write(doc.page_content)
-                        st.markdown("---")
+                # with st.expander(label="See relevant documents", expanded=False):
+                #     # st.write(relevant_docs)
+                #     for doc in relevant_docs:
+                #         st.write(doc.page_content)
+                #         st.markdown("---")
 
                 if selected_file_name in st.session_state.chathistory:
                     for i, msg in enumerate(st.session_state.chathistory[selected_file_name]):
